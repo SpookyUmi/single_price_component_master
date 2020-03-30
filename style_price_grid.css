@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  background: hsl(204, 43%, 93%);
+}
+
+.container {
+  font-size: 11px;
+  /*text-align: center;*/
+  max-width: 540px;
+  width: 70vh;
+  height: 50vh;
+  margin: 15vh auto;
+  background: white;
+  /* border: 10px solid white; */
+  border-radius: 10px;
+  box-shadow: 0 0 20px hsl(218, 22%, 67%);
+}
+
+.top {
+  padding: 15px 25px;
+  height: 40%;
+}
+
+.top p {
+  font-size: 13px;
+  color: hsl(218, 22%, 67%);
+  font-weight: 400;
+}
+
+.bottom {
+  /* padding: 15px 25px; */
+  height: 60%;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+}
+
+.title {
+  font-size: 16px;
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.sub {
+  color: white;
+  background: hsl(179, 62%, 43%);
+}
+
+.about {
+  color: white;
+  background: hsla(179, 62%, 50%, 0.856);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.signup {
+
+}
+
+/*Flexbox begins*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.sub, .about {
+  flex-basis: 50%;
+}
+
+.sub {
+
+}
