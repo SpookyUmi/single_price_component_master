@@ -18,8 +18,8 @@ body {
   /*text-align: center;*/
   max-width: 540px;
   width: 70vh;
-  height: 50vh;
-  margin: 15vh auto;
+  height: 45vh;
+  margin: 20vh auto;
   background: white;
   /* border: 10px solid white; */
   border-radius: 10px;
@@ -28,7 +28,7 @@ body {
 
 .top {
   padding: 15px 25px;
-  height: 40%;
+  height: 43%;
 }
 
 .top p {
@@ -39,7 +39,7 @@ body {
 
 .bottom {
   /* padding: 15px 25px; */
-  height: 60%;
+  height: 57%;
 }
 
 h1 {
@@ -56,11 +56,21 @@ h1 {
 .sub {
   color: white;
   background: hsl(179, 62%, 43%);
+  padding: 25px;
+}
+
+.sub h2 {
+  margin-bottom: 1em;
+}
+
+.sub p {
+  font-size: 12px;
+  margin-bottom: 2em;
 }
 
 .about {
   color: white;
-  background: hsla(179, 62%, 50%, 0.856);
+  background: rgba(48, 192, 190, 0.87);
 }
 
 .attribution {
@@ -73,7 +83,27 @@ h1 {
 }
 
 .signup {
+  text-decoration: none;
+  background: hsl(71, 73%, 54%);
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 0 10px hsl(179, 62%, 25%);
+  margin-bottom: 0.5em;
+}
 
+.price {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.time {
+  font-size: 12px;
+  color: hsl(179, 62%, 75%);
+  margin-left: 1em;
 }
 
 /*Flexbox begins*/
@@ -97,13 +127,38 @@ body {
 .bottom {
   display: flex;
   align-items: stretch;
-  flex-wrap: wrap;
 }
 
 .sub, .about {
   flex-basis: 50%;
 }
 
-.sub {
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.price {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.sub p {
+  display: flex;
+  justify-content: center;
 }
