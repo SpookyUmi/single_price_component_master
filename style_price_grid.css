@@ -14,16 +14,15 @@ body {
 }
 
 .container {
-  font-size: 11px;
+  font-size: 12px;
   /*text-align: center;*/
   max-width: 540px;
   width: 70vh;
   height: 45vh;
   margin: 20vh auto;
   background: white;
-  /* border: 10px solid white; */
   border-radius: 10px;
-  box-shadow: 0 0 20px hsl(218, 22%, 67%);
+  box-shadow: 0 0 20px hsl(218, 22%, 80%);
 }
 
 .top {
@@ -35,11 +34,14 @@ body {
   font-size: 13px;
   color: hsl(218, 22%, 67%);
   font-weight: 400;
+  line-height: 1.5em;
 }
 
 .bottom {
   /* padding: 15px 25px; */
   height: 57%;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
 }
 
 h1 {
@@ -60,17 +62,31 @@ h1 {
 }
 
 .sub h2 {
-  margin-bottom: 1em;
+  font-size: 15px;
 }
 
 .sub p {
-  font-size: 12px;
-  margin-bottom: 2em;
+  font-size: 14px;
+  margin-bottom: 1.5em;
 }
 
 .about {
   color: white;
   background: rgba(48, 192, 190, 0.87);
+  padding: 30px;
+}
+
+.about h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 13px;
+  /* margin-bottom: 2em; */
+  line-height: 1.5em;
+  margin-top: 5px;
+  color: hsl(179, 62%, 80%);
 }
 
 .attribution {
@@ -86,18 +102,21 @@ h1 {
   text-decoration: none;
   background: hsl(71, 73%, 54%);
   color: white;
-  font-size: 12px;
-  padding: 10px;
+  font-size: 14px;
+  padding: 15px;
   font-weight: 700;
   border-radius: 4px;
   box-shadow: 0 0 10px hsl(179, 62%, 25%);
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.signup:hover {
+  background: hsl(71, 73%, 40%);
 }
 
 .price {
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 0.2em;
 }
 
 .time {
@@ -161,4 +180,11 @@ body {
 .sub p {
   display: flex;
   justify-content: center;
+}
+
+@media all and (max-width: 375px) {
+
+  .container {
+
+  }
 }
