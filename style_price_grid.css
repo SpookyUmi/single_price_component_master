@@ -15,10 +15,8 @@ body {
 
 .container {
   font-size: 12px;
-  /*text-align: center;*/
   max-width: 540px;
   width: 70vh;
-  height: 45vh;
   margin: 20vh auto;
   background: white;
   border-radius: 10px;
@@ -38,7 +36,6 @@ body {
 }
 
 .bottom {
-  /* padding: 15px 25px; */
   height: 57%;
   overflow: hidden;
   border-radius: 0 0 10px 10px;
@@ -83,7 +80,6 @@ h1 {
 
 .about p {
   font-size: 13px;
-  /* margin-bottom: 2em; */
   line-height: 1.5em;
   margin-top: 5px;
   color: hsl(179, 62%, 80%);
@@ -185,6 +181,11 @@ body {
 @media all and (max-width: 375px) {
 
   .container {
+    max-width: 320px;
+  }
 
+  .bottom {
+    display: flex;
+    flex-direction: column;
   }
 }
